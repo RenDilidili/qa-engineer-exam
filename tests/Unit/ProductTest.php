@@ -26,9 +26,6 @@ class ProductTest extends TestCase
         // Create a product
         $product = Product::factory()->create();
 
-        //verify if product is saved
-        $product->assertStatus(200);
-
         //verify if data inserted is correct
         $this->assertDatabaseHas('products', [
             'name' => $product->name,

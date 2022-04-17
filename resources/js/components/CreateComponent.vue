@@ -86,9 +86,10 @@
 
 <script>
 import { required, minLength, maxLength, between } from 'vuelidate/lib/validators'
+import axios from 'axios'
     export default {
         name:'CreateComponent',
-        data(){
+        data: function(){
             return{
                 products: {},
                 name: '',
@@ -146,7 +147,6 @@ import { required, minLength, maxLength, between } from 'vuelidate/lib/validator
                         // this.finalStepStatus=false,
                         // this.success = res.data,
                         // this.showAlert()
-
                     }) .catch(error => {
                             console.log(error.response)
                     });
@@ -224,5 +224,5 @@ img {
   display: block;
   margin-bottom: 10px;
 }
-</style>>
+</style>
 

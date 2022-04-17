@@ -19,7 +19,19 @@ $ php artisan migrate
 ```
 $ npm install jest --global
 ```
-## Install Vue
+### Install Vue
 ```
 $ npm install -g @vue/cli
+```
+### Add JEST
+```
+$ vue add unit-jest
+```
+### Run Test in Laravel
+```
+$ php artisan test --testsuite=Unit
+```
+### Run Unit Test in Jest
+```
+$ jest
 ```
